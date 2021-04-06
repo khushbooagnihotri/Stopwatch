@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Page Header -->
+
+    <div id="myDiv" class="myDiv"></div>
+
+
+    <div id="page-header" class="page-header">
+
+      <span>St</span><img src="https://res.cloudinary.com/dftignrf8/image/upload/v1480901935/stopwatch_st153j.png"><span>pwatch</span>
+    </div>
+    <!-- Stopwatch -->
+    <div class="jumbotron">
+
+      <div id="stopwatch">
+        <!-- Stopwatch Timers -->
+        <div id="time">
+          <span id="timeHour">00</span>:<span id="timeMinute">00</span>:<span id="timeSec">00</span>:<span id="timeCsec">00</span>
+        </div>
+        <div id="lap">
+          <span id="lapHour">00</span>:<span id="lapMinute">00</span>:<span id="lapSec">00</span>:<span id="lapCsec">00</span>
+        </div>
+      </div>
+      <!-- Stopwatch Controls -->
+      <div class="container">
+        <div class="controls">
+          <button type="button" id="startStop" class="btn-controls">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+            <span class="sr-only">Start</span>
+          </button>
+          <button type="button" id="split" class="btn-controls">Lap</button>
+          <button type="button" id="reset" class="btn-controls">Reset</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- Lap Times -->
+    <div id="lapTable" class="container1">
+      <table align="center" class="table">
+        <thead>
+          <tr>
+            <th>Lap</th>
+            <th>Interval</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="laptimes" class="tablegap">
+          <!-- print lapTimeDetails here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+  <footer id="footer">
+  <p>Made by Khushboo Agnihotri</p>
+</footer>
+
+</html>

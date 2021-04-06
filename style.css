@@ -1,0 +1,170 @@
+/* Set Background Image for body and basic font-color for the page */
+
+body {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0)), url('time.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+
+/*
+Styling Page Header with Stopwatch Image in header
+vertical-align text and img to bottom
+ */
+
+#page-header {
+  text-align: center;
+  font-size: 6vw;
+  border-bottom: none;
+}
+
+#page-header span {
+  line-height: 5vw;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+
+#page-header img {
+  height: 5vw;
+
+  margin: 0 3px;
+  vertical-align: bottom;
+}
+
+
+/* Background of .jumbotron (= container for timers and controls) transparent */
+
+.jumbotron {
+  background-color: transparent;
+}
+
+
+/* Styling Timers */
+
+#time,
+#lap {
+  text-align: center;
+}
+
+#time {
+  padding-top: 30px;
+  font-size: 4vw;
+}
+
+#timeMsec {
+  font-size: 4vw;
+}
+
+#lap {
+  font-size: 3vw;
+}
+
+#lapMsec {
+  font-size: 2vw;
+}
+
+
+/* Positioning Buttons in '.controls'-div */
+
+.controls {
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+/* Styling Buttons */
+
+.btn-controls {
+  margin: 10px;
+  height: 110px;
+  width: 110px;
+  border: 0.5px solid #fff;
+  border-radius: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#startStop {
+  background-color: rgb(0, 204, 153);
+}
+
+#startStop:hover {
+  background-color: rgba(0, 153, 115, 1);
+}
+
+#split {
+  background-color: rgba(186, 74, 94, .3);
+}
+
+#reset {
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(189, 188, 186, 1);
+}
+
+#reset:hover {
+  background-color: rgb(51, 51, 51);
+  color: #fff;
+}
+
+
+/* Table hidden, so it can be shown when 'split'-Button is clicked */
+
+.table {
+  display: none;
+  font-size: 23px;
+  padding: 15px 5px 5px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+#lapTable {
+  justify-content: center;
+  align-items: center;
+}
+
+tr:hover {background-color: #000;}
+th,td {
+  padding: 10px;
+  /* Apply cell padding */
+}
+
+.tablegap {
+  padding: 13px 13px 13px 13px;
+}
+
+.container1{
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+}
+
+.myDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
